@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    
+  <div id="navbar">
+    <ul>
+      <li><a id="Login" href="/">Login</a></li>
+      <li><a id="News" href="/news.html">News</a></li>
+      <li><a id="Topics" href="/topics.html">Topics</a></li>
+      <li><a id="Search" href="/search.html" >Search</a></li>
+      <li><a id="Sign up" href="/register.html">Sign Up</a></li>
+      
+    </ul>
+  </div>
+    
+  <div id="content">
+           
+    <div id="userForm" >
+       <p id="label" >Insert User Data</p> 
+             
+          <input type="text" placeholder="Firstname"  id="firstname" required>
+         
+          <input type="text" placeholder="Surname" id="surname" required>
+          
+          <input type="text" placeholder="Username" id="username" required>
+
+          <input type="password" placeholder="Password" id="password" required>
+
+          <input type="password" placeholder="Verify password" id="verifyPassword" required>
+          <button  id="submitButton">Create</button> 
+          
+    </div>
+    
+</div>
+
+
+</body>
+
+<script src="clientRequests/signup.js" type="text/javascript"></script> 
+
+  
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="navbar">
+        <ul>
+            <li><a style="font-size: 25px;" id="My news" href="/journalistIndex.html">My news</a></li>
+            <li><a style="font-size: 25px;" id="Add news" href="/addNewsJour.html">Add news</a></li>
+            <li><a style="font-size: 25px;" id="Add topic" href="/addTopicJour.html">Add topic</a></li>
+            <li><a style="font-size: 25px;" id="Search" href="/searchJour.html">Search news</a></li>
+            <li><a style="font-size: 25px;" id="Search topics" href="/searchTopicJour.html">Search topics</a></li>
+             <li><button id="signoutButton" style="font-size: 25px;"> Sign Out</button></li> 
+          </ul>
+    </div>
+
+    <div id="newsContent">
+      <div id="titleBox"></div>
+      <div id="topicsBox"></div>
+      <div id="newsBox"></div>
+
+      <div class="commentSection">
+        <p>Comment Section</p>
+
+        <div id="comments">
+        
+        </div>
+      
+
+      </div>
+      <div id="newComment">
+        Add new comment
+
+        <div id="newCommentContent"><textarea id = "commentContent" placeholder="Add you comment here"></textarea></div>
+        <div id="submitNewComment"><button id="commentSubmit">Add comment</button></div>
+      </div>
+    </div>
+    <script src="/clientRequests/authorizeJournalistPage.js" type="text/javascript"></script>
+    <script src="/clientRequests/getNewsJournalist.js" type="text/javascript"></script>
+    <script src="/clientRequests/addCommentJour.js" type="text/javascript"></script>
+    <script src="/clientRequests/signout.js" type="text/javascript"></script>
+  </body>
+
+</html>

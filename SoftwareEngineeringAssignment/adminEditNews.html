@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    
+  <div id="navbar">
+    <ul>
+      <li><a style="font-size: 20px;" id="My news" href="/adminIndex.html">My news</a></li>
+      <li><a style="font-size: 20px;" id="Admin news" href="/adminNews.html">News</a></li>
+      <li><a style="font-size: 20px;" id="Admin topics" href="/adminTopic.html">Topics</a></li>
+      <li><a style="font-size: 20px;" id="Create topic" href="/createTopicAdmin.html">Create Topic</a></li>
+      <li><a style="font-size: 20px;" id="Create news" href="/createNewsAdmin.html">Create news</a></li>
+      <li><a style="font-size: 20px;" id="Accept news" href="/newsAdmin.html">Accept news</a></li>
+      <li><a style="font-size: 20px;" id="Accept topic" href="/topicsAdmin.html">Accept Topics</a></li>
+      <li><a style="font-size: 20px;" id="Accept comment" href="/acceptCommentsAdmin.html">Accept comments</a></li>
+       <li><button id="signoutButton"style="font-size: 20px;"> Sign Out</button></li> 
+    </ul>
+  </div>
+    
+  <div id="content">
+    <div id="addNews">
+        Edit news
+        <div id="newsTitle">Title<input type="text" id="title" placeholder="Add title"></div>
+        <div id="newsTopics">Topics<input type="text" id="topics" placeholder="Add topics separated by comma"></div>
+        <div id="newsContentArea">
+         <p><br>Content </p> <textarea id ="newsContentText" placeholder="Add content here"></textarea></div>
+        <div id="editNews"><button id="newsEdit">Edit news</button></div>
+      </div>
+      
+  </div>
+    
+    <script src="/clientRequests/authorizeAdminPage.js" type="text/javascript"></script>
+    <script src="/clientRequests/getNewsForEdit.js" type="text/javascript"></script>
+    <script src="/clientRequests/signout.js" type="text/javascript"></script>
+    <script src="/clientRequests/submitEditedNewsAdmin.js" type="text/javascript"></script>
+  </body>
+
+  
+</html>

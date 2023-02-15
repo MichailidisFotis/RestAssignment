@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="navbar">
+      <ul>
+        <li><a style="font-size: 25px;" id="My news" href="/journalistIndex.html">My news</a></li>
+        <li><a style="font-size: 25px;" id="Add news" href="/addNewsJour.html">Add news</a></li>
+        <li><a style="font-size: 25px;" id="Add topic" href="/addTopicJour.html">Add topic</a></li>
+        <li><a style="font-size: 25px;" id="Search" href="/searchJour.html">Search news</a></li>
+        <li><a style="font-size: 25px;" id="Search topics" href="/searchTopicJour.html">Search topics</a></li>
+         <li><button id="signoutButton" style="font-size: 25px;"> Sign Out</button></li> 
+      </ul>
+    </div>
+      
+      <div id="content">
+        <div class="table">
+                    
+          <table id="newsTable">
+            <thead id="newsRow">
+              <td class="tableHeader">Title</td>
+              <td class="tableHeader">Date</td>
+              <td class="tableHeader">State</td>
+              <td></td>
+              <td></td>  
+              <td></td>
+              <td></td>
+            </thead>
+            <tbody>
+              <tr class="newsData"></tr>
+            </tbody>
+          </table>
+        </div>
+     
+          
+      </div>
+      
+      <script src="/clientRequests/authorizeJournalistPage.js" type="text/javascript"></script>
+      <script src="/clientRequests/getJournalistNews.js" type="text/javascript"></script>
+      <script src="/clientRequests/signout.js" type="text/javascript"></script>
+      
+    </body>
+
+</html>
